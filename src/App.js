@@ -23,6 +23,7 @@ import {
   Editor,
   Login,
   ResetPassword,
+  Produtos,
 } from "./pages";
 import "./App.css";
 
@@ -91,30 +92,31 @@ const App = () => {
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={<Ecommerce />} />
-                <Route path="/recover-password" component={<ResetPassword />} />
-                <Route path="/login" component={<Login />} />
+                {/* <Route path="/recover-password" element={<ResetPassword />} />
+                <Route path="/login" element={<Login />} /> */}
                 <Route path="/ecommerce" element={<Ecommerce />} />
+                <Route path="/produtos" element={<Produtos />} />
 
                 {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
+                {/* <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
+                <Route path="/customers" element={<Customers />} /> */}
 
                 {/* apps  */}
-                <Route path="/kanban" element={<Kanban />} />
+                {/* <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
+                <Route path="/color-picker" element={<ColorPicker />} /> */}
 
                 {/* charts  */}
-                <Route path="/line" element={<Line />} />
+                {/* <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/financial" element={<Financial />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
-                <Route path="/stacked" element={<Stacked />} />
+                <Route path="/stacked" element={<Stacked />} /> */}
               </Routes>
             </div>
             <Footer />
