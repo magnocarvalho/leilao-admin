@@ -21,10 +21,14 @@ import {
   ColorPicker,
   ColorMapping,
   Editor,
+  Login,
+  ResetPassword,
 } from "./pages";
 import "./App.css";
 
 import { useStateContext } from "./contexts/ContextProvider";
+// import Login from "./pages/Login";
+// import ResetPassword from "./pages/ResetPassword";
 
 const App = () => {
   const {
@@ -44,7 +48,7 @@ const App = () => {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
-  }, []);
+  });
 
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>
@@ -87,6 +91,8 @@ const App = () => {
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={<Ecommerce />} />
+                <Route path="/recover-password" component={<ResetPassword />} />
+                <Route path="/login" component={<Login />} />
                 <Route path="/ecommerce" element={<Ecommerce />} />
 
                 {/* pages  */}
